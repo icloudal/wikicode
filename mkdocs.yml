@@ -41,6 +41,7 @@ extra:
       link: https://github.com/icloudal
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/alejandroariza-ch/
+  generator: false
 
 markdown_extensions:
   - pymdownx.highlight:
