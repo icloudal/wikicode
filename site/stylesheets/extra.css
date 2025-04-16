@@ -1,0 +1,203 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.14);
+    overflow-x: hidden;
+    color: #f6f6f6; /* Asegura que el texto sea blanco */
+
+
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.07; /* Puedes ajustar la opacidad si quieres que el texto encima se vea mejor */
+    pointer-events: none; /* Para que no interfiera con clics */
+}
+
+/* #<div class="parallax-bg"></div>   : para anyadir este effecto   */
+.parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220%;
+    z-index: -1;
+    opacity: 0.05;
+    background-image: url("../assets/images/da.jpg");
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    will-change: transform;
+}
+
+
+/* Otras personalizaciones (como un encabezado transparente, si lo deseas) */
+.md-header {
+    background: transparent !important;
+    box-shadow: none;
+}
+
+.md-top {
+    background-color: #333333 !important; /* color de fondo normal */
+    color: #ffffff !important; /* color del icono (flecha) */
+    border: none;
+}
+
+.md-top:hover {
+    background-color: #046a61 !important; /* color al pasar el ratón */
+    color: #ffffff !important;
+}
+
+:root > * {
+    --md-primary-fg-color: rgba(0, 144, 158, 0);
+    --md-primary-fg-color--light: #bc0b0b;
+    --md-primary-fg-color--dark: #e80ae8;
+
+}
+
+.md-grid {
+    max-width: 1700px;
+}
+
+/* Code Block */
+:root > * {
+    --md-code-hl-number-color: #f78c6c; /* Números: coral suave */
+    --md-code-hl-special-color: #82aaff; /* Palabras especiales (como import): azul claro */
+    --md-code-hl-function-color: #c792ea; /* Funciones: lila elegante */
+    --md-code-hl-constant-color: #ffcb6b; /* Constantes: amarillo cálido */
+    --md-code-hl-keyword-color: #b5ea92; /* Palabras clave: lila (igual que función para armonía) */
+    --md-code-hl-string-color: #addb67; /* Strings: verde claro suave */
+    --md-code-hl-name-color: #ffcb6b; /* Nombres (como clases): azul claro */
+    --md-code-hl-operator-color: #89ddff; /* Operadores: azul celeste */
+    --md-code-hl-punctuation-color: #ffffff; /* Puntuación: blanco puro para contraste */
+    --md-code-hl-comment-color: #697098; /* Comentarios: gris lavanda */
+    --md-code-hl-generic-color: #d4d4d4; /* Otros elementos: gris claro */
+    --md-code-hl-variable-color: #f07178; /* Variables: rojo coral */
+
+    --md-code-fg-color: #e0e0e0; /* Color del texto de código (general) */
+    --md-code-bg-color: #2c2c33; /* Fondo del bloque de código */
+    --md-code-hl-color: #2c313a; /* Color de fondo de la línea resaltada */
+}
+
+/* Code Block */
+
+
+/* Cambiar color de encabezados */
+h1, h2, h3 {
+    color: #5a82e6; /* verde */
+}
+
+/* Opcional: cambiar el color de negritas */
+strong {
+    color: #fdfdff; /* naranja */
+}
+
+
+.md-typeset h1,
+.md-content__button {
+    display: none;
+}
+
+
+/* Estilo de los enlaces en la barra de navegación inferior */
+.md-footer {
+    color: rgb(123, 164, 216) !important; /* Color blanco para los enlaces */
+    transition: background-color 3s ease, color 0.3s ease; /* Transición suave */
+    background-color: rgba(51, 51, 51, 0) !important; /* Fondo oscuro */
+
+
+}
+
+/* Cambiar el fondo al pasar el ratón por encima de los enlaces */
+.md-footer a:hover {
+    background-color: #ffffff !important; /* Fondo al pasar el ratón */
+    color: #333 !important; /* Color del texto cuando pasas el ratón */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+
+/* Progress Bar */
+.progress-label {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 1.2rem;
+    float: left;
+    background-color: #2979ff;
+}
+
+.progress {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 1.2rem;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+.progress.thin {
+    margin-top: 0.9rem;
+    height: 0.4rem;
+}
+
+.progress.thin .progress-label {
+    margin-top: -0.4rem;
+}
+
+.progress.thin .progress-bar {
+    height: 0.4rem;
+}
+
+.progress-100plus .progress-bar {
+    background-color: #237752;
+}
+
+.progress-80plus .progress-bar {
+    background-color: #fbc02d;
+}
+
+.progress-60plus .progress-bar {
+    background-color: #e69110;
+}
+
+.progress-40plus .progress-bar {
+    background-color: #ff5252;
+}
+
+.progress-20plus .progress-bar {
+    background-color: #ff1744;
+}
+
+.progress-0plus .progress-bar {
+    background-color: #f50057;
+}
+
+/* Progress Bar */
+
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+
+    background-color: rgba(101, 167, 241, 0.37); /* Fondo */
+    border-color: #878787;
+}
+
+.md-typeset .admonition.info > .admonition-title::before {
+    color: #a808a5; /* Color del icono */
+}

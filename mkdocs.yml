@@ -12,6 +12,7 @@ nav:
   - index.md
   - Windows:
       - Windows:
+          - Basics ClI's: Windows/basics-cli.md
           - Performance: Windows/performance.md
           - Hardware: Windows/hardware.md
           - Network: Windows/network.md
@@ -43,13 +44,17 @@ nav:
 
 theme:
   name: material
-  custom_dir: docs/overrides
-
+  # custom_dir: docs/overrides
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/code-json
 
   features:
     - navigation.top
     - navigation.tabs
-    - navigation.sections
+    - navigation.tabs.sticky
     - navigation.tracking
     - navigation.footer
     - navigation.expand
@@ -77,16 +82,7 @@ theme:
 
     - header.autohide
     - announce.dismiss
-    - custom_dir: overrides
 
-
-
-
-  font:
-    text: Inter
-    code: JetBrains Mono
-  icon:
-    logo: material/code-json
   markdown_extensions:
     - attr_list
     - pymdownx.emoji:
@@ -100,16 +96,21 @@ theme:
 
 plugins:
   - social
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: slide
-      width: 100%
-      height: auto
-      zoomable: true
-
-
+  # - info
+#  - glightbox:
+#      touchNavigation: true
+#      loop: false
+#      effect: zoom
+#      slide_effect: slide
+#      width: 100%
+#      height: auto
+#      zoomable: true
+  - mkdocs-nav-weight:
+      section_renamed: false
+      index_weight: -10
+      warning: true
+      reverse: false
+      headless_included: false
   - offline
   - blog
   - search:
@@ -190,7 +191,10 @@ markdown_extensions:
   - toc:
       permalink: true
       title: Index
+      toc_depth: 3
 
 
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - js/scripts.js  # Ruta a tu archivo JS
