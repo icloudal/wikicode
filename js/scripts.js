@@ -16,3 +16,14 @@ document.addEventListener('mousemove', function(e) {
     const y = (e.clientY / window.innerHeight - 0.5) * 20;
     bg.style.transform = `translate(${x}px, ${y}px)`;
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("bg-video");
+  if (video) {
+    video.playbackRate = 0.9;
+  }
+});

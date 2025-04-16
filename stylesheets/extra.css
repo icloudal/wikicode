@@ -2,14 +2,26 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.14);
     overflow-x: hidden;
+    color: #f6f6f6; /* Asegura que el texto sea blanco */
+
 
 }
 
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.07; /* Puedes ajustar la opacidad si quieres que el texto encima se vea mejor */
+  pointer-events: none; /* Para que no interfiera con clics */
+}
 
-
-
+/* #<div class="parallax-bg"></div>   : para anyadir este effecto   */
 .parallax-bg {
     position: fixed;
     top: 0;
@@ -50,6 +62,9 @@ body {
 
 }
 
+.md-grid {
+  max-width: 1700px;
+}
 
 /* Code Block */
 :root > * {
@@ -59,7 +74,7 @@ body {
     --md-code-hl-constant-color: #ffcb6b; /* Constantes: amarillo cálido */
     --md-code-hl-keyword-color: #b5ea92; /* Palabras clave: lila (igual que función para armonía) */
     --md-code-hl-string-color: #addb67; /* Strings: verde claro suave */
-    --md-code-hl-name-color: #82aaff; /* Nombres (como clases): azul claro */
+    --md-code-hl-name-color: #ffcb6b; /* Nombres (como clases): azul claro */
     --md-code-hl-operator-color: #89ddff; /* Operadores: azul celeste */
     --md-code-hl-punctuation-color: #ffffff; /* Puntuación: blanco puro para contraste */
     --md-code-hl-comment-color: #697098; /* Comentarios: gris lavanda */
@@ -74,6 +89,15 @@ body {
 /* Code Block */
 
 
+/* Cambiar color de encabezados */
+h1, h2, h3 {
+  color: #5a82e6; /* verde */
+}
+
+/* Opcional: cambiar el color de negritas */
+strong {
+  color: #fdfdff; /* naranja */
+}
 
 
 
@@ -82,10 +106,6 @@ body {
     display: none;
 }
 
-/* Maximum space for text block */
-.md-grid {
-    max-width: 60%; /* or 100%, if you want to stretch to full-width */
-}
 
 /* Progress Bar */
 .progress-label {
@@ -155,3 +175,13 @@ body {
 
 
 
+.md-typeset .admonition.info,
+.md-typeset details.info {
+
+  background-color: rgba(101, 167, 241, 0.37); /* Fondo */
+  border-color: #878787;
+}
+
+.md-typeset .admonition.info > .admonition-title::before {
+  color: #a808a5; /* Color del icono */
+}
