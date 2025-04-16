@@ -1,39 +1,129 @@
+
+
+
+#Project information
 site_name: Wikicode
+site_author: Alejandro Aiza
+site_description: Wikipedia for coding & more
+# Copyright
+copyright: Copyright &copy; 2025 Alejandro Ariza
 
 nav:
-  - Home: index.md
-  - About: about.md
+  - index.md
+  - Windows:
+      - Windows:
+          - Performance: Windows/performance.md
+          - Hardware: Windows/hardware.md
+          - Network: Windows/network.md
+          - Security & Accounts: Windows/security.md
+          - Software & Compatibility: Windows/software.md
+          - Operating System: Windows/system.md
+          - Maintenance: Windows/maintenance.md
+      - Windows Server:
+          - Overview: Windows Server/windows.md
+          - Configuration: Windows Server/configuration.md
+          - Troubleshooting: Windows Server/troubleshooting.md
+          - Certificate Authority: Windows Server/ca.md
+
+  - Linux:
+      - Windows: problemas/windows.md
+      - Linux: problemas/linux.md
+      - Código: problemas/codigo.md
+  - Code:
+      - IDE: https://github.com/tu-repo
+      - Python: https://github.com/tu-repo
+      - SQL: https://example.com
+      - Powershell: https://example.com
+      - Bash: https://example.com
+  - Blog:
+      - blog/2024.md
+      - blog/2025.md
+      - blog/2026.md
+
 
 theme:
   name: material
+  custom_dir: docs/overrides
+
+
   features:
+    - navigation.top
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
-    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.prune
+
+    - toc.follow
+
     - search.suggest
     - search.highlight
+    - search.share
+
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.action.edit
+    - content.action.view
+
+    - content.tooltips
+
+    - header.autohide
+    - announce.dismiss
+    - custom_dir: overrides
+
+
+
+
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/code-json
+  markdown_extensions:
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
   language: en
   palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
     - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-      primary: teal
-      accent: lime
+
 
 plugins:
   - social
-  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+
+
+  - offline
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - mermaid2:
+      version: 10.0.2
+      javascript: js/mermaid.min.js
+
+
+
+
+
 
 extra:
   social:
@@ -41,24 +131,66 @@ extra:
       link: https://github.com/icloudal
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/alejandroariza-ch/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<icloud1990ch@gmail.com>
   generator: false
+  status:
+    new: Recently added
+    deprecated: Deprecated
+
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - admonition
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
-  - attr_list
+  - pymdownx.keys
+  - pymdownx.blocks.caption
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tilde
+  - pymdownx.progressbar
+  - pymdownx.superfences
+  - attr_list
+  - abbr
+  - def_list
+  - md_in_html
+  - tables
+  - footnotes
+  - admonition
+  - toc:
+      permalink: true
+      title: Index
 
-copyright: |
-  &copy; 2023 <a href="https://github.com/icloudal"  target="_blank" rel="noopener">Alejandro Ariza</a>
+
+extra_css:
+  - stylesheets/extra.css

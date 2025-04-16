@@ -1,0 +1,157 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+
+}
+
+
+
+
+.parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220%;
+    z-index: -1;
+    opacity: 0.05;
+    background-image: url("../assets/images/da.jpg");
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    will-change: transform;
+}
+
+
+/* Otras personalizaciones (como un encabezado transparente, si lo deseas) */
+.md-header {
+    background: transparent !important;
+    box-shadow: none;
+}
+
+.md-top {
+    background-color: #333333 !important; /* color de fondo normal */
+    color: #ffffff !important;           /* color del icono (flecha) */
+    border: none;
+}
+
+.md-top:hover {
+    background-color: #046a61 !important; /* color al pasar el ratón */
+    color: #ffffff !important;
+}
+
+:root > * {
+    --md-primary-fg-color: rgba(0, 144, 158, 0);
+    --md-primary-fg-color--light: #bc0b0b;
+    --md-primary-fg-color--dark: #e80ae8;
+
+}
+
+
+/* Code Block */
+:root > * {
+    --md-code-hl-number-color: #f78c6c; /* Números: coral suave */
+    --md-code-hl-special-color: #82aaff; /* Palabras especiales (como import): azul claro */
+    --md-code-hl-function-color: #c792ea; /* Funciones: lila elegante */
+    --md-code-hl-constant-color: #ffcb6b; /* Constantes: amarillo cálido */
+    --md-code-hl-keyword-color: #b5ea92; /* Palabras clave: lila (igual que función para armonía) */
+    --md-code-hl-string-color: #addb67; /* Strings: verde claro suave */
+    --md-code-hl-name-color: #82aaff; /* Nombres (como clases): azul claro */
+    --md-code-hl-operator-color: #89ddff; /* Operadores: azul celeste */
+    --md-code-hl-punctuation-color: #ffffff; /* Puntuación: blanco puro para contraste */
+    --md-code-hl-comment-color: #697098; /* Comentarios: gris lavanda */
+    --md-code-hl-generic-color: #d4d4d4; /* Otros elementos: gris claro */
+    --md-code-hl-variable-color: #f07178; /* Variables: rojo coral */
+
+    --md-code-fg-color: #e0e0e0; /* Color del texto de código (general) */
+    --md-code-bg-color: #2c2c33; /* Fondo del bloque de código */
+    --md-code-hl-color: #2c313a; /* Color de fondo de la línea resaltada */
+}
+
+/* Code Block */
+
+
+
+
+
+.md-typeset h1,
+.md-content__button {
+    display: none;
+}
+
+/* Maximum space for text block */
+.md-grid {
+    max-width: 60%; /* or 100%, if you want to stretch to full-width */
+}
+
+/* Progress Bar */
+.progress-label {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 1.2rem;
+    float: left;
+    background-color: #2979ff;
+}
+
+.progress {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 1.2rem;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+.progress.thin {
+    margin-top: 0.9rem;
+    height: 0.4rem;
+}
+
+.progress.thin .progress-label {
+    margin-top: -0.4rem;
+}
+
+.progress.thin .progress-bar {
+    height: 0.4rem;
+}
+
+.progress-100plus .progress-bar {
+    background-color: #237752;
+}
+
+.progress-80plus .progress-bar {
+    background-color: #fbc02d;
+}
+
+.progress-60plus .progress-bar {
+    background-color: #e69110;
+}
+
+.progress-40plus .progress-bar {
+    background-color: #ff5252;
+}
+
+.progress-20plus .progress-bar {
+    background-color: #ff1744;
+}
+
+.progress-0plus .progress-bar {
+    background-color: #f50057;
+}
+
+/* Progress Bar */
+
+
+
