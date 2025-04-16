@@ -10,15 +10,15 @@ body {
 }
 
 #bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.07; /* Puedes ajustar la opacidad si quieres que el texto encima se vea mejor */
-  pointer-events: none; /* Para que no interfiera con clics */
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.07; /* Puedes ajustar la opacidad si quieres que el texto encima se vea mejor */
+    pointer-events: none; /* Para que no interfiera con clics */
 }
 
 /* #<div class="parallax-bg"></div>   : para anyadir este effecto   */
@@ -46,7 +46,7 @@ body {
 
 .md-top {
     background-color: #333333 !important; /* color de fondo normal */
-    color: #ffffff !important;           /* color del icono (flecha) */
+    color: #ffffff !important; /* color del icono (flecha) */
     border: none;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .md-grid {
-  max-width: 1700px;
+    max-width: 1700px;
 }
 
 /* Code Block */
@@ -91,19 +91,36 @@ body {
 
 /* Cambiar color de encabezados */
 h1, h2, h3 {
-  color: #5a82e6; /* verde */
+    color: #5a82e6; /* verde */
 }
 
 /* Opcional: cambiar el color de negritas */
 strong {
-  color: #fdfdff; /* naranja */
+    color: #fdfdff; /* naranja */
 }
-
 
 
 .md-typeset h1,
 .md-content__button {
     display: none;
+}
+
+
+/* Estilo de los enlaces en la barra de navegación inferior */
+.md-footer {
+    color: rgb(123, 164, 216) !important; /* Color blanco para los enlaces */
+    transition: background-color 3s ease, color 0.3s ease; /* Transición suave */
+    background-color: rgba(51, 51, 51, 0) !important; /* Fondo oscuro */
+
+
+}
+
+/* Cambiar el fondo al pasar el ratón por encima de los enlaces */
+.md-footer a:hover {
+    background-color: #ffffff !important; /* Fondo al pasar el ratón */
+    color: #333 !important; /* Color del texto cuando pasas el ratón */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 
@@ -174,14 +191,13 @@ strong {
 /* Progress Bar */
 
 
-
 .md-typeset .admonition.info,
 .md-typeset details.info {
 
-  background-color: rgba(101, 167, 241, 0.37); /* Fondo */
-  border-color: #878787;
+    background-color: rgba(101, 167, 241, 0.37); /* Fondo */
+    border-color: #878787;
 }
 
 .md-typeset .admonition.info > .admonition-title::before {
-  color: #a808a5; /* Color del icono */
+    color: #a808a5; /* Color del icono */
 }
