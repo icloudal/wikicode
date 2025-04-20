@@ -1,3 +1,6 @@
+
+![code-6618_256](https://github.com/user-attachments/assets/fde20997-d9a3-4a13-91d5-1607b09b4d06)
+
 #  How to Deploy This MkDocs Site
 
 This project uses **[MkDocs](https://www.mkdocs.org/)** with the **Material for MkDocs** theme to generate a beautiful, responsive documentation site.
@@ -5,6 +8,7 @@ This project uses **[MkDocs](https://www.mkdocs.org/)** with the **Material for 
 Follow these steps to run the site locally and deploy it to **GitHub Pages**.
 
 ---
+
 
 ## ✅ Requirements
 
