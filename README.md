@@ -1,4 +1,4 @@
-# 📘 How to Deploy This MkDocs Site
+#  How to Deploy This MkDocs Site
 
 This project uses **[MkDocs](https://www.mkdocs.org/)** with the **Material for MkDocs** theme to generate a beautiful, responsive documentation site.
 
@@ -20,41 +20,58 @@ Install MkDocs and the Material theme:
 pip install mkdocs mkdocs-material
 ```
 
-## ▶️ Serve Locally
+## Serve Locally
 
 mkdocs serve -> http://127.0.0.1:8000
-mkdocs build -> generate static files -> Optional
+mkdocs build -> generate static files 
 mkdocs gh-deploy - deploy the site to GitHub Pages
 
-Create the .github/workflows/ci.yml
 
-name: ci
+
+
+## Deployment to GitHub Pages (CI/CD)
+
+You can deploy your site automatically using **GitHub Actions**.  
+Create a workflow file at `.github/workflows/ci.yml` with the following content:
+
+```yaml
+name: Deploy MkDocs
+
 on:
   push:
     branches:
-      - master
       - main
+      - master
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
+
       - run: pip install mkdocs-material
+
       - run: mkdocs gh-deploy --force
 
