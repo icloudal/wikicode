@@ -6,10 +6,9 @@ This project uses **[MkDocs](https://www.mkdocs.org/)** with the **Material for 
 
 Follow these steps to run the site locally and deploy it to **GitHub Pages**.
 
----
 
 
-## ✅ Requirements
+### ✅ Requirements
 
 Make sure you have the following installed:
 
@@ -23,7 +22,7 @@ Install MkDocs and the Material theme:
 pip install mkdocs mkdocs-material
 ```
 
-## Serve Locally
+### Serve Locally
 
 mkdocs serve -> http://127.0.0.1:8000
 mkdocs build -> generate static files 
@@ -32,7 +31,7 @@ mkdocs gh-deploy - deploy the site to GitHub Pages
 
 
 
-## Deployment to GitHub Pages (CI/CD)
+### Deployment to GitHub Pages (CI/CD)
 
 You can deploy your site automatically using **GitHub Actions**.  
 Create a workflow file at `.github/workflows/ci.yml` with the following content:
