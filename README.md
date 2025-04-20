@@ -1,5 +1,4 @@
 
-![code-6618_256](https://github.com/user-attachments/assets/fde20997-d9a3-4a13-91d5-1607b09b4d06)
 
 #  How to Deploy This MkDocs Site
 
