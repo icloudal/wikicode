@@ -4,13 +4,13 @@ hide:
   - toc
 ---
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <video autoplay muted loop playsinline id="bg-video">
   <source src="../assets/images/testvideo.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <style>
@@ -21,6 +21,7 @@ hide:
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 2rem;
+  padding: 0 30px;
 }
 
 .flex-container img {
@@ -43,8 +44,8 @@ hide:
     .flex-container {
       flex-direction: column;
       text-align: center;
-      padding: 2rem;  /* Añadir padding extra en móviles */
-      max-width: 90%;  /* Estrechamos la tarjeta al 90% del ancho */
+      padding: 1rem;  /* Añadir padding extra en móviles */
+      max-width: 95%;  /* Estrechamos la tarjeta al 90% del ancho */
 
     }
 
@@ -60,7 +61,6 @@ hide:
 </style>
 
 <div class="flex-container">
-  <img src="assets/images/html.gif" alt="Foto-test">
   <div class="flex-text">
     <h2>👋 Welcome to <strong>Wikicode!</strong></h2>
     <p><strong>Wikicode</strong> is your go-to technical wiki for solving all kinds of  

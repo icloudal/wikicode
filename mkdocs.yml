@@ -1,58 +1,31 @@
+#########################################
+#--------------- Project ----------------
+#########################################
 
-
-
-#Project information
 site_name: Wikicode
 site_author: Alejandro Aiza
 site_description: Wikipedia for coding & more
-# Copyright
 copyright: Copyright &copy; 2025 Alejandro Ariza
 
-nav:
-  - index.md
-  - Windows:
-      - Windows:
-          - Basics ClI's: Windows/basics-cli.md
-          - Performance: Windows/performance.md
-          - Hardware: Windows/hardware.md
-          - Network: Windows/network.md
-          - Security & Accounts: Windows/security.md
-          - Software & Compatibility: Windows/software.md
-          - Operating System: Windows/system.md
-          - Maintenance: Windows/maintenance.md
-      - Windows Server:
-          - Overview: Windows Server/windows.md
-          - Configuration: Windows Server/configuration.md
-          - Troubleshooting: Windows Server/troubleshooting.md
-          - Certificate Authority: Windows Server/ca.md
 
-  - Linux:
-      - Windows: problemas/windows.md
-      - Linux: problemas/linux.md
-      - Código: problemas/codigo.md
-  - Code:
-      - IDE: https://github.com/tu-repo
-      - Python: https://github.com/tu-repo
-      - SQL: https://example.com
-      - Powershell: https://example.com
-      - Bash: https://example.com
-  - Blog:
-      - blog/2024.md
-      - blog/2025.md
-      - blog/2026.md
 
+#########################################
+#------------ Configuration ------------
+#########################################
 
 theme:
   name: material
-  # custom_dir: docs/overrides
+  #custom_dir: overrides
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo2.png
+  language: en
+  palette:
+    - scheme: slate
   font:
     text: Inter
     code: JetBrains Mono
-  icon:
-    logo: material/code-json
 
   features:
-    - navigation.top
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
@@ -65,9 +38,6 @@ theme:
     - navigation.prune
 
     - toc.follow
-
-    - search.suggest
-    - search.highlight
     - search.share
 
     - content.tabs.link
@@ -79,8 +49,6 @@ theme:
     - content.action.view
 
     - content.tooltips
-
-    - header.autohide
     - announce.dismiss
 
   markdown_extensions:
@@ -89,42 +57,16 @@ theme:
         emoji_index: !!python/name:material.extensions.emoji.twemoji
         emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-  language: en
-  palette:
-    - scheme: slate
-
-
 plugins:
   - social
-  # - info
-#  - glightbox:
-#      touchNavigation: true
-#      loop: false
-#      effect: zoom
-#      slide_effect: slide
-#      width: 100%
-#      height: auto
-#      zoomable: true
-  - mkdocs-nav-weight:
-      section_renamed: false
-      index_weight: -10
-      warning: true
-      reverse: false
-      headless_included: false
-  - offline
-  - blog
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - awesome-nav:
+      filename: nav.yml
+  - search
   - minify:
       minify_html: true
   - mermaid2:
       version: 10.0.2
       javascript: js/mermaid.min.js
-
-
-
-
-
 
 extra:
   social:
@@ -194,7 +136,51 @@ markdown_extensions:
       toc_depth: 3
 
 
+
+
+
+#########################################
+#---------------- Themes ----------------
+#########################################
+nav:
+ - index.md
+
+# - Windows:
+#     - Basics ClI's: Windows/basics-cli.md
+#     - Performance: Windows/performance.md
+#     - Hardware: Windows/hardware.md
+#     - Network: Windows/network.md
+#     - Security & Accounts: Windows/security.md
+#     - Software & Compatibility: Windows/software.md
+#     - Operating System: Windows/system.md
+#     - Maintenance: Windows/maintenance.md
+# - Windows Server:
+#     - Overview: Windows Server/windows.md
+#     - Configuration: Windows Server/configuration.md
+#     - Troubleshooting: Windows Server/troubleshooting.md
+#     - Certificate Authority: Windows Server/ca.md
+
+# - Linux:
+#     - Windows: problemas/windows.md
+#     - Linux: problemas/linux.md
+#     - Código: problemas/codigo.md
+# - Code:
+#     - IDE: https://github.com/tu-repo
+#     - Python: https://github.com/tu-repo
+#     - SQL: https://example.com
+#     - Powershell: https://example.com
+#     - Bash: https://example.com
+# - Blog:
+#     - blog/2024.md
+#     - blog/2025.md
+#     - blog/2026.md
+
+
+#########################################
+#---------------- Extras ----------------
+#########################################
+
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra.css  # Custom CSS
 extra_javascript:
-  - js/scripts.js  # Ruta a tu archivo JS
+  - js/scripts.js  # Custom JS
