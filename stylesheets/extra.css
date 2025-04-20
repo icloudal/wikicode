@@ -8,6 +8,9 @@ body {
 
 
 }
+.md-header__button.md-logo img {
+  height: 60px !important; /* Ajusta según tu preferencia (por defecto son ~24px) */
+}
 
 #bg-video {
     position: fixed;
@@ -86,7 +89,7 @@ body {
     --md-code-hl-color: #2c313a; /* Color de fondo de la línea resaltada */
 }
 
-/* Code Block */
+/* Code Block  */
 
 
 /* Cambiar color de encabezados */
