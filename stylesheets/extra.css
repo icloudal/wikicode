@@ -9,7 +9,7 @@ body {
 
 }
 .md-header__button.md-logo img {
-  height: 60px !important; /* Ajusta según tu preferencia (por defecto son ~24px) */
+  height: 48px !important; /* Ajusta según tu preferencia (por defecto son ~24px) */
 }
 
 #bg-video {
@@ -58,43 +58,19 @@ body {
     color: #ffffff !important;
 }
 
-:root > * {
-    --md-primary-fg-color: rgba(0, 144, 158, 0);
-    --md-primary-fg-color--light: #bc0b0b;
-    --md-primary-fg-color--dark: #e80ae8;
-
+:root > * {    /* Nav Bar Color */
+    --md-primary-fg-color: rgba(2, 64, 2, 0);
 }
 
 .md-grid {
     max-width: 1700px;
 }
 
-/* Code Block */
-:root > * {
-    --md-code-hl-number-color: #f78c6c; /* Números: coral suave */
-    --md-code-hl-special-color: #82aaff; /* Palabras especiales (como import): azul claro */
-    --md-code-hl-function-color: #c792ea; /* Funciones: lila elegante */
-    --md-code-hl-constant-color: #ffcb6b; /* Constantes: amarillo cálido */
-    --md-code-hl-keyword-color: #b5ea92; /* Palabras clave: lila (igual que función para armonía) */
-    --md-code-hl-string-color: #addb67; /* Strings: verde claro suave */
-    --md-code-hl-name-color: #ffcb6b; /* Nombres (como clases): azul claro */
-    --md-code-hl-operator-color: #89ddff; /* Operadores: azul celeste */
-    --md-code-hl-punctuation-color: #ffffff; /* Puntuación: blanco puro para contraste */
-    --md-code-hl-comment-color: #697098; /* Comentarios: gris lavanda */
-    --md-code-hl-generic-color: #d4d4d4; /* Otros elementos: gris claro */
-    --md-code-hl-variable-color: #f07178; /* Variables: rojo coral */
-
-    --md-code-fg-color: #e0e0e0; /* Color del texto de código (general) */
-    --md-code-bg-color: #2c2c33; /* Fondo del bloque de código */
-    --md-code-hl-color: #2c313a; /* Color de fondo de la línea resaltada */
-}
-
-/* Code Block  */
 
 
 /* Cambiar color de encabezados */
 h1, h2, h3 {
-    color: #5a82e6; /* verde */
+    color: #9df36d; /* verde */
 }
 
 /* Opcional: cambiar el color de negritas */
@@ -103,15 +79,11 @@ strong {
 }
 
 
-.md-typeset h1,
-.md-content__button {
-    display: none;
-}
 
 
 /* Estilo de los enlaces en la barra de navegación inferior */
 .md-footer {
-    color: rgb(123, 164, 216) !important; /* Color blanco para los enlaces */
+    color: rgb(214, 253, 212) !important; /* Color blanco para los enlaces */
     transition: background-color 3s ease, color 0.3s ease; /* Transición suave */
     background-color: rgba(51, 51, 51, 0) !important; /* Fondo oscuro */
 
