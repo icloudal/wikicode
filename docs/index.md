@@ -62,7 +62,6 @@ hide:
 
 <div class="flex-container">
   <div class="flex-text">
-    <h2>👋 Welcome to <strong>Wikicode!</strong></h2>
     <p><strong>Wikicode</strong> is your go-to technical wiki for solving all kinds of  
     coding challenges, system errors, and essential configurations.</p>
 

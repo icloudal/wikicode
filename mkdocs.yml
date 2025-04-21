@@ -59,8 +59,8 @@ theme:
 
 plugins:
   - social
-  - awesome-nav:
-      filename: nav.yml
+  - awesome-nav
+
   - search
   - minify:
       minify_html: true
@@ -143,7 +143,6 @@ markdown_extensions:
 #---------------- Themes ----------------
 #########################################
 nav:
- - index.md
 
 # - Windows:
 #     - Basics ClI's: Windows/basics-cli.md
@@ -171,7 +170,7 @@ nav:
 #     - Powershell: https://example.com
 #     - Bash: https://example.com
 # - Blog:
-#     - blog/2024.md
+#
 #     - blog/2025.md
 #     - blog/2026.md
 

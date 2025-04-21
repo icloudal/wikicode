@@ -1,0 +1,4 @@
+nav:
+  - Template: template.md
+  - CLI Basics: basics-cli.md
+  - Network: network.md

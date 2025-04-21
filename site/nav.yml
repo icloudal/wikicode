@@ -1,24 +1,3 @@
-
-
-
-
-flatten_single_child_sections: true
-
-ignore: "*.hidden.md"
-
-
-
-
-
-append_unmatched: true
-
-
-sections:
-  - name: Home
-    file: index.md  # Asegúrate de que 'index.md' esté primero
-  - name: Windows
-    directory: Windows  # Asegúrate de que esté solo una vez
-  - name: Windows Server
-    directory: Windows Server
-  - name: Code
-    directory: Code
+# latten_single_child_sections: true  # Simplifica el menú si hay solo 1 archivo
+# gnore: "*.hidden.md"                # Oculta archivos que no quieres mostrar
+# ppend_unmatched: true               # Añade automáticamente lo que olvidaste incluir en el menú

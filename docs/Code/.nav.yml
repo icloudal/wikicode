@@ -1,0 +1,10 @@
+nav:
+  - IDE's:
+    - Pycharm: ide-pycharm.md
+  - Python:
+    - Essentials: python.md
+  - Frameworks:
+      - Flask: flask.md
+
+
+
