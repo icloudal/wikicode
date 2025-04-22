@@ -1,13 +1,8 @@
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
     background-color: rgba(0, 0, 0, 0.14);
-    overflow-x: hidden;
     color: #f6f6f6; /* Asegura que el texto sea blanco */
-
-
 }
+
 .md-header__button.md-logo img {
   height: 48px !important; /* Ajusta según tu preferencia (por defecto son ~24px) */
 }
@@ -20,24 +15,8 @@ body {
     min-height: 100vh;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.07; /* Puedes ajustar la opacidad si quieres que el texto encima se vea mejor */
+    opacity: 0.15; /* Puedes ajustar la opacidad si quieres que el texto encima se vea mejor */
     pointer-events: none; /* Para que no interfiera con clics */
-}
-
-/* #<div class="parallax-bg"></div>   : para anyadir este effecto   */
-.parallax-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 220%;
-    z-index: -1;
-    opacity: 0.05;
-    background-image: url("../assets/images/da.jpg");
-    background-size: auto;
-    background-repeat: repeat;
-    background-position: center;
-    will-change: transform;
 }
 
 
@@ -68,6 +47,8 @@ body {
 
 
 
+
+
 /* Cambiar color de encabezados */
 h1, h2, h3 {
     color: #9df36d; /* verde */
@@ -75,7 +56,7 @@ h1, h2, h3 {
 
 /* Opcional: cambiar el color de negritas */
 strong {
-    color: #fdfdff; /* naranja */
+    color: #bbfdbb; /* naranja */
 }
 
 
@@ -83,7 +64,7 @@ strong {
 
 /* Estilo de los enlaces en la barra de navegación inferior */
 .md-footer {
-    color: rgb(214, 253, 212) !important; /* Color blanco para los enlaces */
+    color: rgb(131, 255, 122) !important; /* Color blanco para los enlaces */
     transition: background-color 3s ease, color 0.3s ease; /* Transición suave */
     background-color: rgba(51, 51, 51, 0) !important; /* Fondo oscuro */
 
