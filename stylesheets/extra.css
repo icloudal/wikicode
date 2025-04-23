@@ -1,7 +1,25 @@
 body {
-    background-color: rgba(0, 0, 0, 0.14);
+    background-color: rgb(0, 0, 0);
     color: #f6f6f6; /* Asegura que el texto sea blanco */
 }
+:root {
+  --cmd-base: #e0e0e0;
+  --cmd-param: #f07178;
+  --cmd-option: #82aaff;
+}
+
+.cmd-base {
+  color: var(--cmd-base);
+}
+
+.cmd-param {
+  color: var(--cmd-param);
+}
+
+.cmd-option {
+  color: var(--cmd-option);
+}
+
 
 .md-header__button.md-logo img {
   height: 48px !important; /* Ajusta según tu preferencia (por defecto son ~24px) */
@@ -150,7 +168,7 @@ strong {
 .md-typeset .admonition.info,
 .md-typeset details.info {
 
-    background-color: rgba(101, 167, 241, 0.37); /* Fondo */
+    background-color: rgb(1, 45, 90); /* Fondo */
     border-color: #878787;
 }
 
